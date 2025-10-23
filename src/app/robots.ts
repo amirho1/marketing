@@ -1,4 +1,7 @@
 import type { MetadataRoute } from "next";
+import process from "process";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
@@ -7,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://growthkeymarketing.com/sitemap.xml",
-    host: "https://growthkeymarketing.com",
+    sitemap: `${BASE_URL}/sitemap.xml`,
+    host: BASE_URL,
   };
 }
