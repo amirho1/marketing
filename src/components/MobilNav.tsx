@@ -14,7 +14,7 @@ export default function MobileNavbar() {
     <nav className=" xl:hidden px-4 py-3">
       <div className="flex items-center justify-between py-3 w-full">
         <Logo />
-        <Button onClick={() => setOpen(!open)} variant="ghost" size="icon">
+        <Button onClick={() => setOpen(!open)} variant="ghost" className="w-fit p-2" size="icon">
           <Hamburger />
         </Button>
       </div>
