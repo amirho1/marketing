@@ -12,8 +12,8 @@ export default function CountKey({ number, name }: Props) {
   const [isEnded, setIsEnded] = useState(false);
 
   return (
-    <div className="flex gap-3 items-center flex-1">
-      <h3 className="text-2xl font-semibold">
+    <div className="flex items-center gap-2 flex-1 w-fit ">
+      <h3 className="text-[20px] md:text-[40px] font-semibold text-center">
         {!isEnded ? (
           <CountUp
             start={0}
@@ -26,7 +26,7 @@ export default function CountKey({ number, name }: Props) {
           `+${formatCompact(number)}`
         )}
       </h3>
-      <span className="text-wrap ">{name}</span>
+      <span className="text-wrap max-w-[110px]">{name}</span>
     </div>
   );
 }
