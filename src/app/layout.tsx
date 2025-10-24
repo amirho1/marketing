@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import MobileNavbar from "@/components/MobilNav";
 import { cn } from "@/lib/utils";
+import CurveBG from "@/components/CurveBG";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -70,7 +71,8 @@ export default function RootLayout({
       >
         <Nav />
         <MobileNavbar />
-        <main className="container m-auto">{children}</main>
+        <main className="m-auto xl:px-24">{children}</main>
+        <CurveBG />
       </body>
     </html>
   );
