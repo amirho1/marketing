@@ -9,3 +9,10 @@ export function cn(...inputs: ClassValue[]) {
 export function trans(key: keyof typeof en) {
   return en[key];
 }
+
+export default function formatCompact(num: number): string {
+  return new Intl.NumberFormat("en-US", {
+    notation: "compact",
+    maximumFractionDigits: 2,
+  }).format(num);
+}
