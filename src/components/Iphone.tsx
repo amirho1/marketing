@@ -2,6 +2,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Environment, Html } from "@react-three/drei";
+import AnimatedCircles from "./Circles";
 
 const ZOOM = 25;
 const X_AXIOS = 25;
@@ -14,7 +15,7 @@ function PhoneModel({ url }: { url: string }) {
 
 export default function IphoneModel() {
   return (
-    <div className="w-[500px] h-[606px] xl:h-[700px] max-md:m-auto max-md:w-[300px]">
+    <div className="w-[500px] h-[606px] xl:h-[700px] max-md:m-auto max-md:w-[300px] overflow-visible relative">
       <Canvas camera={{ position: [X_AXIOS, Y_AXIOS, ZOOM], fov: 35 }}>
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 10, 5]} intensity={1} />
@@ -32,6 +33,7 @@ export default function IphoneModel() {
           enablePan={false}
         />
       </Canvas>
+      <AnimatedCircles />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function CountKey({ number, name }: Props) {
           `+${formatCompact(number)}`
         )}
       </h3>
-      <span className="text-wrap max-w-[110px]">{name}</span>
+      <span className="text-wrap max-w-[90px]">{name}</span>
     </div>
   );
 }

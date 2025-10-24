@@ -30,7 +30,7 @@ export default function HeroSection() {
       </div>
 
       <div className="md:flex-col-reverse flex flex-col gap-6">
-        <div className="flex items-center sm:justify-be gap-2 flex-wrap md:gap-32">
+        <div className="flex items-center gap-1 flex-wrap ">
           <CountKey name={trans("revenueGenerated")} number={TWENTY_FIVE_MILLION} />
           <CountKey name={trans("adCampaigns")} number={THREE_MILLION} />
         </div>

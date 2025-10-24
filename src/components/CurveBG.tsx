@@ -20,7 +20,7 @@ export default function CurveBG() {
   }, []);
 
   return (
-    <div className="w-screen absolute -z-1" style={{ top: `${width / 7}px` }}>
+    <div className="w-screen absolute -z-1" style={{ top: "30%" }}>
       <svg
         ref={ref}
         className="w-full"
