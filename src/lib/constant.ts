@@ -1,0 +1,2 @@
+export const TWENTY_FIVE_MILLION = 25_000_000;
+export const THREE_MILLION = 3_000_000;
